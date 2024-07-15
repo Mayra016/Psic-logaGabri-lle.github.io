@@ -1,0 +1,340 @@
+
+
+:root {
+    --light-gray: #B4B4B4;
+    --dark-gray: #4A4C52;
+    --white-and-background: #EFEFEF;
+    --black-text: #020202;
+    --gray-text: #B1B1B4;
+    --dark-gradient: #777777;
+    --light-gradient: #CCCCCC;
+} 
+
+@font-face {
+    font-family: 'Brandon Grotesque Web Light', 'Ubuntu';
+    src: url('Fonts/Bradon-Grot.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: var(--black-text);
+}
+
+
+h2, h3, .sections a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+body, h3, h4, h5, span, p {
+    font-family: "Brandon Grotesque Web Light";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+}
+
+button {
+    border: none;
+}
+
+a:hover{
+    cursor: pointer;
+    color: var(--light-gray);
+}
+
+.img-click:hover{
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 27px;
+    padding-bottom: 10px;
+}
+
+.infos, body, .hability, .topics, main, .faq-topic, .atendimentos {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections, .social-medias, .social-media-buttons, .habilities, .atendimento-psicológico, .about-me, .faq-line, .faq, .sessão-de-psicologia {
+    display: flex;
+    flex-direction: row;
+}
+
+.infos > * {
+    margin-bottom: 10px;
+}
+
+.sections {
+    text-align: center;
+    justify-content: center;
+}
+
+.sections > * {
+    margin: 10px 10px;
+}
+
+.social-medias, .img-click {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.habilities, .hability {
+    margin: auto;
+
+}
+
+.habilities {
+
+    margin: 100px 450px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hability h3 {
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.topics {
+    margin: 0px;
+    padding: 50px;
+    background-color: var(--light-gray);
+    width: 100%;
+}
+
+.topic h3, .questions {
+    padding: 5px;
+    font-weight: 700;
+}
+
+.topic h5 {
+    font-size: 17px;
+}
+
+.topic {
+    max-width: 300px;
+}
+
+.atendimentos {
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.title {
+    padding: 20px;
+    text-align: center;
+}
+
+.atendimento-psicológico {
+    gap: 60px;
+}
+
+.topic, .atendimento-psicológico {
+    margin: 0px;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+}
+
+.frase-motivacional {
+    position: relative; 
+    width: 100%;
+    justify-content: flex-end;
+    text-align: end; 
+    margin-top: 40px; 
+}
+
+.frase-motivacional img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.frase-motivacional span {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(0,5%); 
+    background-color: var(--dark-gray); 
+    color: var(--white-and-background);
+    padding: 10px; 
+    max-width: 80%; 
+    font-family: "Caudex", serif; 
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    z-index: 1; 
+    text-align: right;
+    justify-content: right;
+}
+
+.about {
+    background-color: var(--light-gray);
+    gap: 20px;
+    padding: 50px;
+}
+
+.about-me, .about-me h3, .about-me h5 {
+    justify-content: flex-start;
+    text-align: start; 
+}
+
+.about-me {
+    background-color: var(--white-and-background);
+    justify-content: right;
+    padding-left: 10%;
+}
+
+.about-me h2 {
+    font-size: 40px;
+}
+
+.about-me h3 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.about-me h5, .faq-topic {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.about-me-text {
+    align-items: left;
+    max-width: 600px;
+    padding-right: 20%;
+}
+
+.gaby {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    object-fit: cover;
+}
+
+.social-media-buttons {
+    max-width: 100px;
+    margin: auto;
+    padding: 20px;
+    justify-content: left;
+    gap: 10px;
+    align-items: left; 
+    text-align: left;
+}
+
+.faq h2 {
+    font-size: 40px;
+    text-align: left;
+    padding: 50px 10px;
+}
+
+.faq-line {
+    text-align: center;
+}
+
+.faq-topic h3 {
+    font-size: 30px;
+    color: var(--dark-gradient)
+}
+
+.faq-topic h3, .faq-topic h5{
+    max-width: 350px;
+    text-align: left;
+    padding: 10px;
+}
+
+.gaby-faq {
+    height: 100%;
+    width: 300px;
+}
+
+.faq {
+    justify-content: center;
+    gap: 20px;
+}
+
+.sessão-de-psicologia {
+    background: linear-gradient(to right, var(--dark-gradient), var(--light-gradient));
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessão-de-psicologia button {
+    background-color: var(--dark-gray);
+    color: var(--white-and-background);
+    font-size: 20px;
+    font-weight: 100;
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+.sessão-de-psicologia h1 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.sessão-de-psicologia button:hover{
+    cursor: pointer;
+    background-color: var(--dark-gradient);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.google-maps {
+    width: 100%;
+}
+
+.footer-infos {
+    padding: 40px;
+}
+
+.footer-social-medias-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 576px) {
+    body, main {
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+}
