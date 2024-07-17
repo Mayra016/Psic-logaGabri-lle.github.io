@@ -24,7 +24,7 @@ html {
 
 a {
     font-style: none;
-    text-decoration: none;.faq-line, 
+    text-decoration: none;
     color: var(--black-text);
 }
 
@@ -346,7 +346,6 @@ h1 {
 }
 
 .google-maps {
-    padding-left: 20px;;
     width: 100%;
 }
 
