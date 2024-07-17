@@ -8,6 +8,8 @@
     --gray-text: #B1B1B4;
     --dark-gradient: #777777;
     --light-gradient: #CCCCCC;
+    --green-whatts: #29A71A;
+    --light-green: #76C86D;
 } 
 
 @font-face {
@@ -215,10 +217,10 @@ h1 {
 
 .about {
     background-color: var(--light-gray);
-    width: 97%;
+    width: 96%;
     gap: 20px;
     padding: 50px;
-    display: block;
+    display: flex;
     justify-content: center;
     justify-items: center;
     margin: auto;
@@ -232,8 +234,7 @@ h1 {
 .about-me {
     background-color: var(--white-and-background);
     justify-content: right;
-    padding-left: 10%;
-    
+    width: 95%;
 }
 
 .about-me h2 {
@@ -255,6 +256,7 @@ h1 {
 .about-me-text {
     align-items: left;
     max-width: 600px;
+    padding-left: 20px;
     padding-right: 20%;
 }
 
@@ -322,7 +324,7 @@ h1 {
 }
 
 .sessão-de-psicologia button {
-    background-color: var(--dark-gray);
+    background-color: var(--green-whatts);
     color: var(--white-and-background);
     font-size: 20px;
     font-weight: 100;
@@ -338,7 +340,7 @@ h1 {
 
 .sessão-de-psicologia button:hover{
     cursor: pointer;
-    background-color: var(--dark-gradient);
+    background-color: var(--light-green);
     border: none;
     transition: background-color 0.3s ease;
 }
