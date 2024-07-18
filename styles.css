@@ -116,7 +116,6 @@ h1 {
 }
 
 .habilities {
-
     margin: 100px 450px;
     justify-content: center;
     gap: 50px;
@@ -366,5 +365,89 @@ h1 {
         text-align: center;
         justify-content: center;
         justify-items: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .habilities h3 {
+        font-size: 15px;
+    }
+
+    .habilities h4 {
+        font-size: 12px;
+    }
+
+    .habilities {
+        gap: 25px;
+    }
+
+    .atendimento-psicológico {
+        flex-direction: column;
+    }
+
+    .frase-motivacional span {
+        bottom: 10px; 
+        font-size: 12px;
+    }
+
+    .frase-motivacional {
+        margin-bottom: 0px;
+    }
+
+    .about {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        margin-top: -5px;
+        /*padding: 10px 0px;*/
+        padding-top: 10px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .faq {
+        flex-direction: column;
+    }
+
+    .gaby-faq {
+        height: 170%;
+        width: 100%;
+        clip-path: polygon(10% 25%, 100% 25%, 100% 100%, 10% 100%);
+        margin-left: -15%;
+        margin-top: -280px;
+        width: 500px;
+    }
+
+    .sessão-de-psicologia {
+        margin-top: -20px;
+        padding: 20px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sessão-de-psicologia h1 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .sessão-de-psicologia button {
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 45px;
+        margin-top: 10px;
+    }
+
+    .footer-infos h3 {
+        font-size: 15px;
+        width: 500px;
     }
 }
