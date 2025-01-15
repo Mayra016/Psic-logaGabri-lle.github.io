@@ -181,8 +181,8 @@
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible'); // Añade la clase visible
-                    observer.unobserve(entry.target); // Deja de observar este elemento
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); 
                 }
             });
         }, options);
