@@ -537,11 +537,11 @@ h1 {
     }
 
     .habilities h3 {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .habilities h4 {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .habilities {
@@ -549,11 +549,11 @@ h1 {
     }
 
     .topics h2 {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .topics h3 {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .atendimentos h2 {
@@ -572,9 +572,15 @@ h1 {
         width: 70%;
     }
 
-    .faq-text-section .helvetica-bold, #dúvidas {
+    .faq-text-section .helvetica-bold {
         font-family: 'Helvetica-Bold';
         font-size: 20px;
+        text-align: center;
+    }
+
+    #dúvidas {
+        font-family: 'Helvetica-Bold';
+        font-size: 40px;
         text-align: center;
     }
 
@@ -586,6 +592,7 @@ h1 {
         bottom: 10px; 
         font-size: 12px;
         background-color: var(--gray-text);
+        width: 40%;
     }
 
     .frase-motivacional {
@@ -606,6 +613,10 @@ h1 {
         padding: 0%;
     }
 
+    .about-me-text .social-media-buttons {
+        padding-left: 43%;
+    }
+
     .faq {
         flex-direction: column;
         margin: 0px;
@@ -620,8 +631,10 @@ h1 {
     }
 
     .faq-topic {
-        width: 30%;
+        width: 100%;
         padding: 10px;
+        margin: auto;
+        padding-bottom: 30px;
     }
 
     .faq-topic h3, .faq-topic h5{
@@ -631,7 +644,11 @@ h1 {
     }
 
     #perguntas {
-        font-size: 15px;
+        font-size: 25px;
+    }
+
+    #respostas {
+        font-size: 18px;
     }
 
     .gaby-faq {
@@ -683,8 +700,8 @@ h1 {
     }
 
     .faq-line {
-
-        justify-content: center;
+        flex-direction: column;
+        align-content: center;
     }
 
     div .faq-text-section {
