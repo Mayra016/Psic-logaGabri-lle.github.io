@@ -1,21 +1,110 @@
 
 
 :root {
-    --light-gray: #B4B4B4;
-    --dark-gray: #4A4C52;
+    --light-gray: #224437;
+    --dark-gray: #224437;
+    --dark-gray-titles: #424242;
     --white-and-background: #EFEFEF;
     --black-text: #020202;
     --gray-text: #B1B1B4;
-    --dark-gradient: #777777;
-    --light-gradient: #CCCCCC;
+    --dark-gray-background: #7d7d7d;
+    --dark-gradient: #224437;
+    --light-gradient: #b6efb7;
     --green-whatts: #29A71A;
-    --light-green: #76C86D;
+    --light-green: #e5ffe6;
 } 
 
+/* FONTS */
+
 @font-face {
-    font-family: 'Brandon Grotesque Web Light', 'Ubuntu';
-    src: url('Fonts/Bradon-Grot.ttf') format('truetype');
+    font-family: 'Heebo-Regular';
+    src: url('Fonts/Heebo-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url('Fonts/Heebo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('Fonts/Futura-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('Fonts/NeueHelveticaBQBold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Caudex-Bold';
+    src: url('Fonts/Caudex-Bold.ttf') format('truetype');
+}
+
+.heebo-bold {
+    font-family: 'Heebo-Bold';
+}
+
+.helvetica-font {
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.helvetica-bold {
+    font-family: 'Helvetica-Bold';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.caudex-bold {
+    font-family: 'Caudex-Bold';
+    font-weight: 800;
+}
+
+/* ANIMATIONS */
+
+/* MAKE ALL .TOPIC ELEMENTS INVISIBLE */
+.topic {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+/* MAKE ALL .TOPIC ELEMENTS VISIBLE */
+.topic.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.topic:nth-child(1).visible {
+    transition-delay: 0s;
+}
+
+.topic:nth-child(2).visible {
+    transition-delay: 0.2s;
+}
+
+.topic:nth-child(3).visible {
+    transition-delay: 0.4s;
+}
+
+.topic:nth-child(4).visible {
+    transition-delay: 0.6s;
+}
+
+
+.topic {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -32,12 +121,9 @@ a:visited {
     color: var(--black-text);
 }
 
-h2, h3, .sections a {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
 
 body, h3, h4, h5, span, p {
-    font-family: "Brandon Grotesque Web Light";
+    font-family: 'Heebo-Regular';
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -70,6 +156,13 @@ h1 {
 .infos, body, .hability, .topics, main, .faq-topic, .atendimentos {
     display: flex;
     flex-direction: column;
+}
+
+.infos h1{
+    padding: 0px;
+    margin:0px;
+    margin-top: 30px;
+    margin-bottom: -10px;
 }
 
 .sections, .social-medias, .social-media-buttons, .habilities, .atendimento-psicológico, .about-me, .faq-line, .faq, .sessão-de-psicologia {
@@ -124,6 +217,8 @@ h1 {
 .hability h3 {
     font-weight: 700;
     padding-bottom: 10px;
+    color: var(--dark-gray-titles);
+    font-size: 20px;
 }
 
 .topics {
@@ -131,6 +226,13 @@ h1 {
     padding: 50px;
     background-color: var(--light-gray);
     width: 100%;
+    color: white;
+}
+
+.topics h3 {
+    font-family: 'Helvetica-Bold';
+    font-size: 18px;
+    margin: 5px;
 }
 
 .topic h3, .questions {
@@ -138,18 +240,35 @@ h1 {
     font-weight: 700;
 }
 
+.topic h3{
+    font-size: 20px;
+}
+
 .topic h5 {
     font-size: 17px;
+    padding-top: 40px;
 }
 
 .topic {
     max-width: 300px;
+    color: var(--dark-gray);
+    background: var(--light-green);
+    margin: 5px;
+    border-radius: 100px;
+    padding: 20px;
+    height: 350px;
+    align-content: center;
 }
+
 
 .atendimentos {
     justify-content: center;
     justify-items: center;
     margin: auto;
+}
+
+.atendimentos h2 {
+    margin: 50px;
 }
 
 .title {
@@ -189,17 +308,16 @@ h1 {
     bottom: 20px; 
     left: 50%; 
     transform: translateX(0,5%); 
-    background-color: var(--dark-gray); 
+    background-color: var(--dark-gray-background); 
     color: var(--white-and-background);
     padding: 10px; 
     max-width: 80%; 
-    font-family: "Caudex", serif; 
-    font-weight: 700;
     font-style: normal;
-    font-size: 19px;
+    font-size: 20px;
     z-index: 1; 
     text-align: right;
     justify-content: right;
+    margin-right: 300px;
 }
 
 .sections, .social-medias, .habilities, .atendimento-psicológico, .about, .sessão-de-psicologia {
@@ -298,6 +416,10 @@ h1 {
     padding: 10px;
 }
 
+#perguntas {
+    padding-bottom: 30px;
+}
+
 .gaby-faq {
     justify-items: right;
     height: 100%;
@@ -314,33 +436,43 @@ h1 {
 .sessão-de-psicologia {
     background: linear-gradient(to right, var(--dark-gradient), var(--light-gradient));
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     margin: auto;
-    gap: 50px;
-    justify-content: center;
+    gap: 80px;
+    justify-content: left;
     align-items: center;
+    padding-left: 300px;
+
 }
 
 .sessão-de-psicologia button {
-    background-color: var(--green-whatts);
+    background-color: #068956;
     color: var(--white-and-background);
     font-size: 20px;
     font-weight: 100;
     height: auto;
     width: auto;
-    padding: 10px;
+    padding: 15px 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px #020202;
+    border: none;
+
 }
 
 .sessão-de-psicologia h1 {
     font-size: 40px;
     font-weight: 100;
+    padding-right: 100px;
 }
 
 .sessão-de-psicologia button:hover{
     cursor: pointer;
-    background-color: var(--light-green);
-    border: none;
+    background-color: var(--dark-gray-titles);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(55, 255, 0);
     transition: background-color 0.3s ease;
+    transition: border-style 0.3s ease;
 }
 
 .google-maps {
@@ -351,12 +483,37 @@ h1 {
     padding: 40px;
 }
 
+.footer-infos h2, .footer-infos h3{
+    margin: 3px;
+}
+
 .footer-social-medias-icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
 }
+
+.futura-font {
+    font-family: 'Futura-Book';
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 17px;
+}
+
+#dúvidas {
+    font-size: 64px;
+}
+
+#perguntas {
+    font-size: 18px;
+}
+
+#sobre {
+    font-size:56px;
+}
+
+
 
 @media (max-width: 576px) {
     body, main {
@@ -369,20 +526,54 @@ h1 {
         overflow-x: hidden;
     }
 
+    .sections a {
+        font-size: 12px;
+    }
+
     h1{
         font-size: 20px;
     }
 
     .habilities h3 {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .habilities h4 {
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .habilities {
         gap: 25px;
+    }
+
+    .topics h2 {
+        font-size: 20px;
+    }
+
+    .topics h3 {
+        font-size: 10px;
+    }
+
+    .atendimentos h2 {
+        font-size: 20px;
+    }
+
+    .topic h3 {
+        font-size: 18px;
+    }
+
+    .topic h2 {
+        font-size: 12px;
+    }
+
+    .topic {
+        width: 70%;
+    }
+
+    .faq-text-section .helvetica-bold, #dúvidas {
+        font-family: 'Helvetica-Bold';
+        font-size: 20px;
+        text-align: center;
     }
 
     .atendimento-psicológico {
@@ -392,6 +583,7 @@ h1 {
     .frase-motivacional span {
         bottom: 10px; 
         font-size: 12px;
+        background-color: var(--gray-text);
     }
 
     .frase-motivacional {
@@ -409,10 +601,35 @@ h1 {
 
     .about-me {
         flex-direction: column;
+        padding: 0%;
     }
 
     .faq {
         flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .faq-topic h5 {
+        font-size: 10px;
+    }
+
+    .faq-topic {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .faq-topic h3, .faq-topic h5{
+        max-width: 350px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #perguntas {
+        font-size: 15px;
     }
 
     .gaby-faq {
@@ -423,6 +640,10 @@ h1 {
         margin-top: -280px;
         width: 500px;
     }
+/*
+    .frase-motivacional img, .gaby, .google-maps, .gaby-faq {
+        width: 100%;
+    }*/
 
     .sessão-de-psicologia {
         margin-top: -20px;
@@ -449,5 +670,35 @@ h1 {
     .footer-infos h3 {
         font-size: 15px;
         width: 500px;
+    }
+
+    #sobre {
+        font-size: 35px;
+    }
+
+    .about-me-text h3 {
+        font-size: 25px;
+    }
+
+    .faq-line {
+
+        justify-content: center;
+    }
+
+    div .faq-text-section {
+        text-align: center;
+
+    }
+
+    .sessão-de-psicologia h1 {
+        padding-right: 10px;
+    }
+
+    .sessão-de-psicologia button {
+        width: auto;
+    }
+
+    body {
+        width: 100%;
     }
 }
