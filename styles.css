@@ -224,7 +224,7 @@ h1 {
 .topics {
     margin: 0px;
     padding: 50px;
-    background-color: var(--light-gray);
+    background-color: #29b580;
     width: 100%;
     color: white;
 }
