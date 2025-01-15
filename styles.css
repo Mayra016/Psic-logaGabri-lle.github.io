@@ -596,7 +596,7 @@ h1 {
     }
 
     .frase-motivacional {
-        margin-bottom: 0px;
+        margin-bottom: -3px;
     }
 
     .about {
@@ -611,7 +611,10 @@ h1 {
     .about-me {
         flex-direction: column;
         padding: 0%;
+
     }
+
+
 
     .about-me-text .social-media-buttons {
         padding-left: 43%;
