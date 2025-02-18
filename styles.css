@@ -2,16 +2,16 @@
 
 :root {
     --light-gray: #224437;
-    --dark-gray: #224437;
+    --dark-gray: #1e2167;
     --dark-gray-titles: #424242;
     --white-and-background: #EFEFEF;
     --black-text: #020202;
     --gray-text: #B1B1B4;
     --dark-gray-background: #7d7d7d;
-    --dark-gradient: #224437;
-    --light-gradient: #b6efb7;
-    --green-whatts: #29A71A;
-    --light-green: #e5ffe6;
+    --dark-gradient: #1e2167;
+    --light-gradient: #ababab;
+    --green-whatts: #1e2167;
+    --light-green: #B0B1C6;
 } 
 
 /* FONTS */
@@ -109,6 +109,13 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+}
+
+.logo img{
+    width: 331px;
+    height: 331px;
+    margin-top: -105px;
+    margin-bottom: -120px;
 }
 
 a {
@@ -209,7 +216,7 @@ h1 {
 }
 
 .habilities {
-    margin: 100px 450px;
+    margin: 40px 450px;
     justify-content: center;
     gap: 50px;
 }
@@ -224,7 +231,7 @@ h1 {
 .topics {
     margin: 0px;
     padding: 50px;
-    background-color: #29b580;
+    background-color: #1e2167;
     width: 100%;
     color: white;
 }
@@ -333,7 +340,7 @@ h1 {
 
 
 .about {
-    background-color: #29b580;
+    background-color: #1e2167;
     width: 96%;
     gap: 20px;
     padding: 50px;
@@ -448,7 +455,7 @@ h1 {
 }
 
 .sessão-de-psicologia button {
-    background-color: #29b580;
+    background-color: #1e2167;
     color: var(--white-and-background);
     font-size: 20px;
     font-weight: 100;
@@ -472,7 +479,7 @@ h1 {
     background-color: var(--dark-gray-titles);
     border-width: 2px;
     border-style: solid;
-    border-color: rgb(55, 255, 0);
+    border-color: #4f8792;
     transition: background-color 0.3s ease;
     transition: border-style 0.3s ease;
 }
